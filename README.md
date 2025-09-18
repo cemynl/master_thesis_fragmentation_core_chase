@@ -223,22 +223,6 @@ Results are saved in `bench_results.csv` with timestamps for analysis.
 - SQLite3
 - Standard library modules: `sqlite3`, `random`, `csv`, `time`, `pathlib`, `argparse`
 
-## Troubleshooting
-
-### Common Issues
-
-1. **Memory Issues**: For large datasets, the system may consume significant memory during graph construction and chase operations.
-
-2. **Recursion Limits**: The graph traversal may hit Python's recursion limit. The system automatically increases the limit to 1,000,000.
-
-3. **Database Locks**: Ensure no other processes are accessing the database files during execution.
-
-### Performance Tips
-
-- Use SSD storage for better I/O performance
-- Increase available RAM for large patient datasets
-- Monitor disk space as intermediate files can be large
-- Use the benchmark runner for consistent performance measurements
 
 ## File Dependencies
 
